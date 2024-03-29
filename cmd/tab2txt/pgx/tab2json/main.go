@@ -4,6 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"log"
 	"os"
 
 	t2t "github.com/takanoriyanagitani/go-pg2txt/table2txt"
@@ -33,6 +34,10 @@ var tableName string = os.Getenv("ENV_TABLE_NAME")
 
 func main() {
 	defer database.Close()
+	if 0 == len(tableName) {
+		log.Printf("table name missing: ENV_TABLE_NAME")
+		return
+	}
 	var jsons []string = must(t2c.Query(
 		context.Background(),
 		tableName,
