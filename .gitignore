@@ -19,3 +19,6 @@
 
 # Go workspace file
 go.work
+
+*.swp
+cmd/tab2txt/pgx/tab2json/tab2json

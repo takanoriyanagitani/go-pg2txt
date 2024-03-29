@@ -1,0 +1,153 @@
+[run]
+skip-files = [
+	"_test.go$",
+]
+
+[linters]
+enable = [
+	"errcheck",
+	"gosimple",
+	"govet",
+	"ineffassign",
+	"staticcheck",
+	"unused",
+
+	"asciicheck",
+	"bidichk",
+	"bodyclose",
+	"containedctx",
+	"contextcheck",
+	"cyclop",
+	"decorder",
+	"dogsled",
+	"dupl",
+	"dupword",
+	"durationcheck",
+	# "errchkjson",
+	"errname",
+	"errorlint",
+	"revive",
+]
+
+[[linters-settings.revive.rules]]
+name = "blank-imports"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "context-as-argument"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "context-keys-type"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "dot-imports"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "empty-block"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "error-naming"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "error-return"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "error-strings"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "errorf"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "exported"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "increment-decrement"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "indent-error-flow"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "package-comments"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "range"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "receiver-naming"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "redefines-builtin-id"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "superfluous-else"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "time-naming"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "unexported-return"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "unreachable-code"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "unused-parameter"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "var-declaration"
+disabled = true
+
+[[linters-settings.revive.rules]]
+name = "var-naming"
+disabled = false
+
+#[linters-settings.revive]
+#enable-all-rules = true
+
+[[linters-settings.revive.rules]]
+name = "line-length-limit"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "argument-limit"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "atomic"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "blank-imports"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "bool-literal-in-expr"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "call-to-gc"
+disabled = false
+
+[[linters-settings.revive.rules]]
+name = "cognitive-complexity"
+disabled = false
